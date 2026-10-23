@@ -7,9 +7,16 @@
 #include"LogAnalyzer.h"
 using namespace std;
 
-int main(){
+int main(int args,char* argv[]){
+
     try{
-        LogReader reader("logs/system.log");
+        if(args!=2){
+            throw invalid_argument("参数数量错误");
+        }
+
+        string filename=argv[1];
+
+        LogReader reader(filename);
 
         auto logs=reader.read();
 
