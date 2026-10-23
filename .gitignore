@@ -1,0 +1,20 @@
+# CMake 编译目录
+/build/
+
+# 编译生成的库目录
+/lib/
+
+#程序输出目录
+/output/
+
+#编译产物
+*.exe
+*.o
+*.obj
+*.a
+*.dll
+*.so
+*.lib
+
+#运行日志
+*.log
